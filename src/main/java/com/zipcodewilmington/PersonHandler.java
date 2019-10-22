@@ -42,7 +42,8 @@ public class PersonHandler {
         // identify terminal condition
         // identify increment
         {
-            Person currentPerson = personArray[i];
+            Person currentPerson;
+            currentPerson = personArray[i];
             String stringRepresentation = currentPerson.toString();
             result = result + stringRepresentation;
         }
@@ -61,12 +62,20 @@ public class PersonHandler {
 
     public String forEachLoop() {
         String result = "";
-        // identify array's type
-        // identify array's variable-name
 
+        // identify array's type
+        //Person currentPerson
+        // identify array's variable-name
+         //       personArray
         // use the above discoveries to declare for-each-loop signature
             // begin loop
+        for ( Person currentPerson    : personArray)
+        {
+            String stringRepresentation = currentPerson.toString();
+            result = result + stringRepresentation;
+        }
                 // get `string Representation` of `currentPerson`
+
                 // append `stringRepresentation` to `result` variable
             // end loop
 
