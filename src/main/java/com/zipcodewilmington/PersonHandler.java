@@ -17,11 +17,12 @@ public class PersonHandler {
         // while `counter` is less than length of array
             // begin loop
         while (counter < personArray.length) {
-            counter++;
 
-            Person currentPerson = personArray[counter-1];
+
+            Person currentPerson = personArray[counter];
             String stringRepresentation = currentPerson.toString();
             result += stringRepresentation;
+            counter++;
         }
 
 
